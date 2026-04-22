@@ -1,51 +1,51 @@
-# Step 0: Open Git Bash normally (not Git Bash Here)
+Step 0: Open Git Bash normally (not Git Bash Here)
 
-# Step 1: Go to user home directory
+Step 1: Go to user home directory
 cd ~
 
-# Step 2: Create a fresh folder for Experiment 5
+Step 2: Create a fresh folder for Experiment 5
 mkdir DevOps_Exp5
 cd DevOps_Exp5
 
-# Step 3: Initialize a new Git repository
+Step 3: Initialize a new Git repository
 git init
 
-# Step 4: Verify repository is clean
+Step 4: Verify repository is clean
 git status
 
-# Step 5: Create a sample file for versioning
+Step 5: Create a sample file for versioning
 echo "Git Tagging Experiment" > file1.txt
 
-# Step 6: Add file to staging area
+Step 6: Add file to staging area
 git add file1.txt
 
-# Step 7: Commit the file
+Step 7: Commit the file
 git commit -m "Initial commit for tagging experiment"
 
-# Step 8: View commit history
+Step 8: View commit history
 git log --oneline
 
-# Step 9: Create an annotated tag
+Step 9: Create an annotated tag
 git tag -a v1.0 -m "Version 1.0 release"
 
-# Step 10: List all tags
+Step 10: List all tags
 git tag
 
-# Step 11: View details of the tag
+Step 11: View details of the tag
 git show v1.0
 
-# Step 12: create repository and then Add GitHub remote repository
+Step 12: create repository and then Add GitHub remote repository
 git remote add origin https://github.com/USERNAME/DevOps_Exp5.git
 
-# Step 13: Push commits to GitHub
+Step 13: Push commits to GitHub
 git push origin master
 
-# Step 14: Push the tag to GitHub
+Step 14: Push the tag to GitHub
 git push origin v1.0
 
-# Step 15: (Optional) Push all tags
+Step 15: (Optional) Push all tags
 git push --tags
 
-# Step 16: Create GitHub Release using browser
-# Go to GitHub → Repository → Releases → Create new release
-# Select tag v1.0 → Add title & description → Publish release
+Step 16: Create GitHub Release using browser
+Go to GitHub → Repository → Releases → Create new release
+Select tag v1.0 → Add title & description → Publish release
